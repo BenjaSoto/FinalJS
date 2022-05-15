@@ -53,15 +53,15 @@
 
     </nav>
 
-<div class="cartera"> <!-- probar sacarlo -->
-    <div class="row justify-content-center cartelera"> 
+
+    <div class="row justify-content-center cartelera">
 
         <div class="card  border-primary my-3" style="width: 18rem;">
             <div class="card-body descuento">
                 <h4 class="card-title">Estudiante</h4>
                 <h5 class="card-text my-3">Tiene un descuento </h5>
                 <h5 class="card-text my-4"> <b>80% </b> </h5>
-                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentacion</h6>
+                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentación</h6>
             </div>
         </div>
 
@@ -70,7 +70,7 @@
                 <h4 class="card-title">Trainee</h4>
                 <h5 class="card-text my-3">Tiene un descuento </h5>
                 <h5 class="card-text my-4"> <b> 50% </b> </h5>
-                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentacion</h6>
+                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentación</h6>
             </div>
         </div>
 
@@ -79,11 +79,11 @@
                 <h4 class="card-title">Junior</h4>
                 <h5 class="card-text my-3">Tiene un descuento </h5>
                 <h5 class="card-text my-4"> <b>15% </b> </h5>
-                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentacion</h6>
+                <h6 class="card-subtitle mb-2 text-muted my-5">* Presentar documentación</h6>
             </div>
         </div>
     </div>
-</div>
+
 
     <div class="ventas">
         <p class="h6 my-1">VENTA</p>
@@ -106,12 +106,14 @@
                 <div class=" form-group col-md-6 py-2">
                     <!--cantidad de entradas-->
                     <label for="exampleInputCant" class="form-label">Cantidad</label>
-                    <input type="text" class="form-control" name="
-                cant" id="cant" placeholder="Cantidad" > <!-- onkeyup="preciototal()"> se calcula solo--> 
+                    <input type="number" class="form-control" name="cant" id="cant" placeholder="Cantidad"
+                        pattern="^[0-9]" min="1"> <!-- onkeyup="preciototal()"> se calcula solo-->
                 </div>
                 <div class="form-group col-md-6 py-2">
-                    <label for="exampleInputCategory" class="form-label">Categoria</label>
-                    <select class="form-select" aria-label="Default select example" id="categoria" ><!-- onchange="preciototal()"> se calcula solo--> 
+                    <label for="exampleInputCategory" class="form-label">Categoría</label>
+                    <select class="form-select" aria-label="Default select example" id="categoria">
+                        <!-- onchange="preciototal()"> se calcula solo-->
+                        <option value="0"> --- Seleccione ---</option>
                         <option value="1">Estudiante</option>
                         <option value="2">Trainee</option>
                         <option value="3">Junior</option>
